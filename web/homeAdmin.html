@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+    <title>HealthNet</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homeAdmin.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var username = sessionStorage.getItem("usuario");
+            if (username) {
+                var welcomeMessage = document.getElementById("welcome-message");
+                welcomeMessage.textContent = "¡Bienvenid@, " + username + "!";
+            } else {
+                console.log("Nombre de usuario no encontrado en sessionStorage.");
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" id="logo"><img src="Images/Hip.png" alt="logoHip"></a>
+            <nav>
+                <a href="login.html">Cerrar sesión</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Servicios</a>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="container_welcome">
+                <h1 id="welcome-message">¡Bienvenid@!</h1>
+                <h2>Selecciona lo que deseas hacer...</h2>
+            </div>
+            <div class="container_block">
+                <div class="block">
+                    <a href="adminPaci.html">
+                        <img src="Images/patient.svg" class="img" viewbox="0 0 48 48" alt="">
+                        <span class="label"><b> Comunidad </b></span>
+                        <span class="descripcion">Ingresar al foro de DishifyMx</span>
+                    </a>
+                </div>
+                <div class="block">
+                    <a href="adminDoctor.html">
+                        <img src="Images/doctor.svg" class="img" viewbox="0 0 48 48" alt="">
+                        <span class="label"><b> Servicios </b></span>
+                        <span class="descripcion"> Generar recetas, información de ingredientes, etc. </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; HIP, Medica Star.</p>
+        </div>
+    </footer>
+</body>
+</html>
