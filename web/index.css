@@ -43,7 +43,7 @@ button:hover{
 }
 
 header{
-    background-color: #FFFFFF;
+    background-color: #a5e32c;
 }
 
 header img{
@@ -73,7 +73,7 @@ header a{
 }
 
 header a:hover{
-    color: #a5e32c;
+    color: #FFFFFF;
 }
 
 #hero{
@@ -107,9 +107,8 @@ header a:hover{
 }
 
 #info{
-    background-color: rgb(
-        30, 30, 30);
-    color: white;
+    background-color: rgb(255,255,255);
+    color: black;
     text-align: center;
 }
 
@@ -145,8 +144,8 @@ header a:hover{
 .buscar{
     background: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(200,0,0,0.5),
+        rgba(220,0,0,0.5)
     ), #465244;
 }
 /* segundo container
@@ -190,13 +189,12 @@ header a:hover{
 .buscar{
     background: linear-gradient(
         0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ), #465244;
+        #636363,
+        #b4ed43),#a5e32c;
 }
 /* Estilos para la sección de Servicios */
 #servicios {
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(255,255,255);
     color: white;
     text-align: center;
     padding: 150px 0;
@@ -236,7 +234,7 @@ header a:hover{
 
 .service img {
     width: 100%;
-    max-height: 300px; /* Ajusta la altura máxima de las imágenes según tu preferencia */
+    max-height: 400px; /* Ajusta la altura máxima de las imágenes según tu preferencia */
 }
 
 .service p {
@@ -339,7 +337,7 @@ footer .container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #a5e32c;
+        background-color: #9ad91e;
         border-radius: 25px;
         border-style: solid;
         border-width: medium; 

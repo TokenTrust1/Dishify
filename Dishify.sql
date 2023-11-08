@@ -22,3 +22,6 @@ create table archivos_pdf (
   id_user int,
   foreign key (id_user) references users(id_user) on update cascade on delete cascade
 );
+
+SELECT * FROM users WHERE usuario = 'Cham';
+

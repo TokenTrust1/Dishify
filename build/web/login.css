@@ -32,9 +32,8 @@ body{
 .hola{
     background-color: #a5e32c;
 }
-
 header{
-    background-color: #FFFFFF;
+    background-color: #a5e32c;
 }
 
 header img{
@@ -64,9 +63,8 @@ header a{
 }
 
 header a:hover{
-    color: #a5e32c;
+    color: #FFFFFF;
 }
-
 #home{
     display: flex;
     align-items: center;
