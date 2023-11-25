@@ -1,9 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 25 nov 2023, 17:47:42
-    Author     : chump
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
