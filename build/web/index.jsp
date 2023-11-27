@@ -40,7 +40,7 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -100,7 +100,7 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
                 <i class="bi-list-columns"></i>
-            <h3><a href="#">Información nutrimental</a></h3>
+                <h3><a href="Informacion.html">Información nutrimental</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
@@ -112,7 +112,7 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="bi-wechat"></i>
-            <h3><a href="#">Blog de Cocina</a></h3>
+            <h3><a href="Blog.html">Blog de Cocina</a></h3>
           </div>
         </div>
       </div>
@@ -217,7 +217,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-bar-chart-square"></i></div>
-              <h4><a href="#">Información nutrimental</a></h4>
+              <h4><a href="Informacion.html">Información nutrimental</a></h4>
               <p>Esta página proporciona información de los ingredientes y las recetas para mayor apoyo.</p>
             </div>
           </div>
@@ -225,7 +225,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="#">Blog de cocina</a></h4>
+              <h4><a href="Blog.html">Blog de cocina</a></h4>
               <p>Un lugar para publicar, buscar y guardar recetas, hechas por ti o por otros usuarios.</p>
             </div>
           </div>
@@ -241,7 +241,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-award"></i></div>
-              <h4><a href="#">Dishify Premium</a></h4>
+              <h4><a href="Premium.html">Dishify Premium</a></h4>
               <p>Servicios más personalizados que benefician al usuario que cuenta con la suscripción.</p>
             </div>
           </div>
