@@ -96,7 +96,6 @@
     Connection conn = null;
     PreparedStatement pstmt = null;
     try {
-        Class.forName("com.mysql.cj.jdbc.Driver");
         conn = ConexionBD.obtenerConexion();
         if (contraseña.equals(ccontraseña)) {
             PreparedStatement pstmt2 = conn.prepareStatement("SELECT * FROM users WHERE usuario = ?");
@@ -113,9 +112,9 @@
                 pstmt.setString(3, nombre);
                 int rowsAffected = pstmt.executeUpdate();
                 if (rowsAffected > 0) {
-                    response.sendRedirect("../../login.html?registroExitoso=true");
+                    response.sendRedirect("../../login.jsp?registroExitoso=true");
                 } else {
-                    response.sendRedirect("../../registrarse.html?registroFallido=true");
+                    response.sendRedirect("../../registrarse.jsp?registroFallido=true");
                 }
             }
         } else {
@@ -132,7 +131,7 @@
         }
     }
 %>
-    <section class="vh-100" style="background-color: #eee;">
+    <section class="vh-100" style="background-color: #eee; min-height: 1300px;">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -141,7 +140,7 @@
               <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                   <p class="text-center text-warning h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crear cuenta</p>
-                  <form class="mx-1 mx-md-4" action="register.jsp">
+                  <form class="mx-1 mx-md-4" action="register2.jsp">
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
@@ -175,7 +174,7 @@
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                       <button type="submit" class="btn btn-warning btn-lg">Registrar</button>
                     </div>
-                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Ya tienes una cuenta?<a href="../../login.html"
+                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Ya tienes una cuenta?<a href="../../login.jsp"
                         class="link-warning"> Ingresa</a></p>
                   </form>
                 </div>

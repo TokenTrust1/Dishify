@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,20 +38,24 @@
       <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <!-- <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li> --> 
-          <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.jsp#about">Acerca de</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.jsp#services">Servicios</a></li> --> 
+          <li><a class="nav-link scrollto" href="index.jsp#team">Equipo</a></li>
+          <li class="dropdown"><a href="index.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Recetas.html">Generar recetas</a></li>
-              <li><a href="Sustitucion.html">Sustitución de ingredientes</a></li>
-              <li><a href="Informacion.html">Información nutrimental</a></li>
-              <li><a href="Planificador.html">Planificador de dietas</a></li>
-              <li><a href="Blog.html">Blog de cocina</a></li>
+              <li><a href="#">Generar recetas</a></li>
+              <li><a href="Sustitucion.jsp">Sustitución de ingredientes</a></li>
+              <li><a href="Informacion.jsp">Información nutrimental</a></li>
+              <li><a href="Planificador.jsp">Planificador de dietas</a></li>
+              <li><a href="Blog.jsp">Blog de cocina</a></li>
+              <li><a href="Premium.jsp">Premium</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="index.jsp#contact">Contáctanos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="login.html" class="get-started-btn scrollto">Comenzar</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Comenzar</a>
     </div>
   </header><!-- End Header -->
 
@@ -60,41 +65,41 @@
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Planificador de Dietas</h2>
+          <h2>Generar Recetas</h2>
           <ol>
             <li><a href="index.jsp">Inicio</a></li>
-            <li>Planificador de Dietas</li>
+            <li>Generar Recetas</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
     <section class="inner-page" style="position: relative;height: 100vh;color: rgb(0, 0, 0);min-height: 1000px;">
-      <div class="bg-image" style="background: url('assets/img/Planificador.png') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.7; z-index: -1;">
+      <div class="bg-image" style="background: url('assets/img/Recetas.png') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.4; z-index: -1;">
       </div>
-        <div class="container" style="height: 100vh;display: flex;justify-content: left;margin-left: 20px;">
+        <div class="container" style="height: 100vh; display: flex; justify-content: center;">
           <div data-aos="fade-up" data-aos-duration="1000" style="max-width: 700px;">
-            <div class="row" style="z-index: 100; position: right; ">
-              <!-- Imagen a la derecha del texto -->
-              <div class="col-md-5" style="background-image: url('assets/img/Planificador2.png'); background-size: cover; background-position: left center; padding: 150px;">
+            <div class="row" style="z-index: 100; position: relative;">
+              <!-- Imagen a la izquierda del texto -->
+              <div class="col-md-5" style="background-image: url('assets/img/Recetas2.png'); background-size: cover; background-position: left center; padding: 150px;">
                 <!-- Imagen de fondo aquí -->
               </div>
-                <!-- Contenido del texto a la izquierda -->
+              <!-- Contenido del texto a la derecha -->
               <div class="col-md-7">
                 <div class="card">
                   <div class="card-title text-warning text-center" style="padding-top: 15px;">
-                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">  Planificador de Dietas</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">  Generar Recetas</h1>
                   </div>
                   <div class="card-body">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                         <p>
-                            Contamos con un servicio básico pero eficaz para planificar tus dietas, así ayudandote a tener un plan de comidas
-                            rápidamente y adecuado a tus preferencias y necesidades, para usarlo necesitas actualizar tus datos con la
-                            información requerida para usarlo, ya que para que sea personalizado a cada usuario se requieren sus parametros.
+                          En DishifyMx, ofrecemos un servicio único para generar recetas personalizadas basadas en tus preferencias e ingredientes disponibles.
+                          Con nuestra tecnología avanzada de deep learning podrás generar recetas personalizadas a tu gusto y según tus preferencias y objetivos, complementado tu dieta con nuestros otros servicios.
                         </p>
                         <ul>
-                          <li>Recetas saludables.</li>
-                          <li>Planea tu dieta de una manera rápida y personalizada a tu gusto.</li>
+                          <li>Recetas personalizadas a tu dieta y estilo de vida.</li>
+                          <li>Variaciones creativas para tus ingredientes disponibles.</li>
+                          <li>Opciones saludables para mejorar tu alimentación.</li>
                         </ul>
                         <a class="btn btn-secondary disabled" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Próximamente</a>
                       </div>
@@ -106,6 +111,7 @@
         </div>
     </section>
   </main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">

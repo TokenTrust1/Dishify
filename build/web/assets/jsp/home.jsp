@@ -26,39 +26,31 @@
   <link href="../css/home.css" rel="stylesheet">
 </head>
 <body>
-    <header id="header" class="fixed-top ">
-        <div class="container d-flex align-items-center justify-content-lg-between">
-          <h1 class="logo me-auto me-lg-0"><a href="../../index.html" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
-          <nav id="navbar" class="navbar order-last order-lg-0">
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="home.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto" href="../../index.html#services">Servicios</a></li>
-                <li><a class="nav-link scrollto" href="../../index.html#about">Acerca de</a></li>
-              <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-                <ul>
-                  <li><a href="#">Drop Down 1</a></li>
-                  <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                    <ul>
-                      <li><a href="#">Deep Drop Down 1</a></li>
-                      <li><a href="#">Deep Drop Down 2</a></li>
-                      <li><a href="#">Deep Drop Down 3</a></li>
-                      <li><a href="#">Deep Drop Down 4</a></li>
-                      <li><a href="#">Deep Drop Down 5</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Drop Down 2</a></li>
-                  <li><a href="#">Drop Down 3</a></li>
-                  <li><a href="#">Drop Down 4</a></li>
-                </ul>
-              </li> DROPDOWN  -->
-              <li><a class="nav-link scrollto" href="../../index.html#contact">Contáctanos</a></li>
-              <li><a class="nav-link scrollto" href="#">Configuración</a></li>
-              <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
+                <li><a class="nav-link scrollto" href="home.jsp#about">Acerca de</a></li>
+                <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                            <li><a href="#">Generar recetas</a></li>
+                            <li><a href="#">Sustitución de ingredientes</a></li>
+                            <li><a href="#">Información nutrimental</a></li>
+                            <li><a href="../jsp/Planificador.jsp">Planificador de dietas</a></li>
+                            <li><a href="#">Blog de cocina</a></li>
+                            <li><a href="#">Premium</a></li>
+                            </ul>
+                        </li>
+                    <li><a class="nav-link scrollto" href="home.jsp#contact">Contáctanos</a></li>
+                    <li><a class="nav-link scrollto" href="#">Configuración</a></li>
+                    <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
-          </nav><!-- .navbar -->
-          <a href="#" class="get-started-btn scrollto">Premium</a>
-        </div>
-    </header>
+        </nav><!-- .navbar -->
+        <a href="#" class="get-started-btn scrollto">Premium</a>
+    </div>
+</header>
     <%
         // Obtener datos de la sesión
         String user = (String) session.getAttribute("user");
