@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,27 +35,27 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#about">Acerca de</a></li>
-          <!-- <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li> --> 
-          <li><a class="nav-link scrollto" href="index.html#team">Equipo</a></li>
-          <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.jsp#about">Acerca de</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.jsp#services">Servicios</a></li> --> 
+          <li><a class="nav-link scrollto" href="index.jsp#team">Equipo</a></li>
+          <li class="dropdown"><a href="index.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Recetas.html">Generar recetas</a></li>
-              <li><a href="Sustitucion.html">Sustitución de ingredientes</a></li>
-              <li><a href="Informacion.html">Información nutrimental</a></li>
-              <li><a href="Planificador.html">Planificador de dietas</a></li>
-              <li><a href="Blog.html">Blog de cocina</a></li>
-              <li><a href="Premium.html">Premium</a></li>
+              <li><a href="Recetas.jsp">Generar recetas</a></li>
+              <li><a href="Sustitucion.jsp">Sustitución de ingredientes</a></li>
+              <li><a href="#">Información nutrimental</a></li>
+              <li><a href="Planificador.jsp">Planificador de dietas</a></li>
+              <li><a href="Blog.jsp">Blog de cocina</a></li>
+              <li><a href="Premium.jsp">Premium</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contáctanos</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#contact">Contáctanos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="login.html" class="get-started-btn scrollto">Comenzar</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Comenzar</a>
     </div>
   </header><!-- End Header -->
 
@@ -64,42 +65,41 @@
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Dishify Premium</h2>
+          <h2>Informacion Nutricional</h2>
           <ol>
             <li><a href="index.jsp">Inicio</a></li>
-            <li>Dishify Premium</li>
+            <li>Informacion Nutricional</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
     <section class="inner-page" style="position: relative;height: 100vh;color: rgb(0, 0, 0);min-height: 1000px;">
-      <div class="bg-image" style="background: url('assets/img/Premium.png') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.7; z-index: -1;">
+      <div class="bg-image" style="background: url('assets/img/Info.jpg') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.4; z-index: -1;">
       </div>
-        <div class="container" style="height: 100vh;display: flex;justify-content: left;margin-left: 20px;">
+        <div class="container" style="height: 100vh; display: flex; justify-content: center;">
           <div data-aos="fade-up" data-aos-duration="1000" style="max-width: 700px;">
-            <div class="row" style="z-index: 100; position: right; ">
-              <!-- Imagen a la derecha del texto -->
-              <div class="col-md-5" style="background-image: url('assets/img/Premium2.jpg'); background-size: cover; background-position: left center; padding: 150px;">
+            <div class="row" style="z-index: 100; position: relative;">
+              <!-- Imagen a la izquierda del texto -->
+              <div class="col-md-5" style="background-image: url('assets/img/Info2.jpg'); background-size: cover; background-position: left center; padding: 150px;">
                 <!-- Imagen de fondo aquí -->
               </div>
-                <!-- Contenido del texto a la izquierda -->
+              <!-- Contenido del texto a la derecha -->
               <div class="col-md-7">
                 <div class="card">
                   <div class="card-title text-warning text-center" style="padding-top: 15px;">
-                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">  Dishify Premium</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Informacion Nutricional</h1>
                   </div>
                   <div class="card-body">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                         <p>
-                            Dishify Premium es una versión avanzada de la aplicación Dishify, diseñada para ofrecer una experiencia de nutrición y bienestar más enriquecedora y personalizada. 
-                            Esta suscripción de pago incluye acceso exclusivo a servicios especializados que potencian la salud y la alimentación consciente de los usuarios. 
-                            Con Dishify Premium, los usuarios acceden a un conjunto integral de herramientas y recursos que facilitan el logro de sus objetivos de salud y nutrición, apoyados por tecnología avanzada y conocimientos expertos.
+                          En Esta seccion, ofrecemos un servicio para que puedas saber las cantidades caloricas y diferente informacion sobre el alimento que estas consumiendo, 
+                          ademas de ayudarte en caso de que salgas a algun restaurante u otro lado y no sabes que alimentos se asemejan a tu dieta en el sentido de proteinas, vitaminas, entre otras cosas.
                         </p>
                         <ul>
-                          <li>Ahorro Económico en Estilo de Vida Saludable.</li>
-                          <li>Mejora del Conocimiento en Nutrición.</li>
-                          <li>Asesoramiento Personalizado.</li>
+                          <li>Decisiones Informadas: Proporciona información nutricional clave para elegir ingredientes de forma más saludable.</li>
+                          <li>Alimentación Consciente: Aumenta la conciencia sobre el impacto de cada ingrediente en la salud.</li>
+                          <li>Dietas Específicas: Facilita la selección de ingredientes para dietas con restricciones o necesidades particulares.</li>
                         </ul>
                         <a class="btn btn-secondary disabled" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Próximamente</a>
                       </div>
@@ -111,6 +111,7 @@
         </div>
     </section>
   </main><!-- End #main -->
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">

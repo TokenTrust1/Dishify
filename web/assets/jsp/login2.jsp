@@ -81,7 +81,6 @@ String mensaje = "";
 Connection con = null;
 
 try {
-    Class.forName("com.mysql.cj.jdbc.Driver");
     con = ConexionBD.obtenerConexion();
     String sql = "SELECT * FROM users WHERE usuario = ?";
     PreparedStatement stmt = con.prepareStatement(sql);
@@ -100,7 +99,7 @@ try {
         }
     } else {
         mensaje = "El usuario no existe.";
-        response.sendRedirect("../../register.html?noExiste=true");
+        response.sendRedirect("../../register.jsp?noExiste=true");
     }
 } catch (Exception e) {
     mensaje = "Error al conectar con la base de datos: " + e.getMessage();
@@ -108,7 +107,7 @@ try {
     if (con != null) try { con.close(); } catch (SQLException e) { e.printStackTrace(); }
 }
 %>
-<section class="vh-100" style="background-color: #eee;">
+<section class="vh-100" style="background-color: #eee; min-height: 1200px;">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -121,7 +120,7 @@ try {
                 </div>
                 <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-2">
                   <p class="text-center text-warning h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Iniciar Sesión</p>
-                  <form class="mx-1 mx-md-4" action="login.jsp">
+                  <form class="mx-1 mx-md-4" action="login2.jsp">
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
@@ -146,7 +145,7 @@ try {
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                       <button type="submit" class="btn btn-warning btn-lg">Ingresar</button>
                     </div>
-                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Todavía no tienes cuenta?<a href="register.html"
+                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Todavía no tienes cuenta?<a href="../../register.jsp"
                         class="link-warning"> Crea una</a></p>
                   </form>
                 </div>

@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,27 +35,27 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-inner-pages">
     <div class="container d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#about">Acerca de</a></li>
-          <!-- <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li> --> 
-          <li><a class="nav-link scrollto" href="index.html#team">Equipo</a></li>
-          <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.jsp#about">Acerca de</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.jsp#services">Servicios</a></li> --> 
+          <li><a class="nav-link scrollto" href="index.jsp#team">Equipo</a></li>
+          <li class="dropdown"><a href="index.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Recetas.html">Generar recetas</a></li>
-              <li><a href="Sustitucion.html">Sustitución de ingredientes</a></li>
-              <li><a href="Informacion.html">Información nutrimental</a></li>
-              <li><a href="Planificador.html">Planificador de dietas</a></li>
-              <li><a href="#">Blog de cocina</a></li>
-              <li><a href="Premium.html">Premium</a></li>
+              <li><a href="Recetas.jsp">Generar recetas</a></li>
+              <li><a href="#">Sustitución de ingredientes</a></li>
+              <li><a href="Informacion.jsp">Información nutrimental</a></li>
+              <li><a href="Planificador.jsp">Planificador de dietas</a></li>
+              <li><a href="Blog.jsp">Blog de cocina</a></li>
+              <li><a href="Premium.jsp">Premium</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="index.html#contact">Contáctanos</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#contact">Contáctanos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="login.html" class="get-started-btn scrollto">Comenzar</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Comenzar</a>
     </div>
   </header><!-- End Header -->
 
@@ -64,17 +65,17 @@
     <section class="breadcrumbs">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Blog</h2>
+          <h2>Sustitución de ingredientes</h2>
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li>Blog</li>
+            <li><a href="index.jsp">Inicio</a></li>
+            <li>Sustitución de ingredientes</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
     <section class="inner-page" style="position: relative;height: 100vh;color: rgb(0, 0, 0);min-height: 1000px;">
-      <div class="bg-image" style="background: url('assets/img/Blog.jpg') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.7; z-index: -1;">
+      <div class="bg-image" style="background: url('assets/img/Sustitucion1.png') no-repeat center center; background-size: cover; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.7; z-index: -1;">
       </div>
         <div class="container" style="height: 100vh; display: flex; justify-content: right; margin-right: initial; padding-right: 40px;">
           <div data-aos="fade-up" data-aos-duration="1000" style="max-width: 700px;">
@@ -83,18 +84,18 @@
               <div class="col-md-7">
                 <div class="card">
                   <div class="card-title text-warning text-center" style="padding-top: 15px;">
-                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">  Blog</h1>
+                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">  Sustitución de ingredientes</h1>
                   </div>
                   <div class="card-body">
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                         <p>
-                          El Blog de Cocina en Dishify es una plataforma interactiva que ofrece a los usuarios una amplia gama de contenidos relacionados con la cocina y la nutrición. 
-                          Este espacio digital cuenta con recetas saludables, consejos de cocina, tendencias alimenticias, y artículos educativos escritos por chefs y expertos en nutrición. 
-                          Está diseñado para inspirar y educar a los usuarios sobre cómo preparar comidas deliciosas y nutritivas, incentivando al mismo tiempo un estilo de vida saludable y consciente.
+                          Como complemento a nuestro servicio de generar recetas, incluímos un servicio para que las recetas sean aún más personalizadas y la experiencia todavía mejor.
+                          El software que crea las recetas puede agregar o quitar ingredientes para formar una receta completa, por lo que puede que algún ingrediente que agregó no sea de tu agrado,
+                          o sea algo que no puedes comer, por lo que al buscar más precisión y una mejor experiencia agregamos este servicio para sustituir ingredientes por otros del mismo tipo, elegidos por el usuario.
                         </p>
                         <ul>
-                          <li>Proporciona a los usuarios continuas ideas de recetas y técnicas de cocina que pueden ayudar a diversificar sus menús y evitar la monotonía en la alimentación.</li>
-                          <li>Ofrece valiosa información sobre nutrición y consejos prácticos de cocina, contribuyendo a una mejor comprensión de cómo una alimentación saludable puede ser integrada fácilmente en la vida cotidiana.</li>
+                          <li>Mayor precisión para una mejor experiencia.</li>
+                          <li>Recetas aún más personalizadas.</li>
                         </ul>
                         <a class="btn btn-secondary disabled" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Próximamente</a>
                       </div>
@@ -102,7 +103,7 @@
                 </div>
               </div>
               <!-- Imagen a la derecha del texto -->
-              <div class="col-md-5" style="background-image: url('assets/img/Blog2.jpg'); background-size: cover; background-position: left center; padding: 150px;">
+              <div class="col-md-5" style="background-image: url('assets/img/Sustitucion2.jpg'); background-size: cover; background-position: left center; padding: 150px;">
                 <!-- Imagen de fondo aquí -->
               </div>
             </div>  
