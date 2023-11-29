@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +21,7 @@
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Template Main CSS File -->
-  <link href="assets/css/login.css" rel="stylesheet">
+  <link href="assets/css/register.css" rel="stylesheet">
   <script>
     window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById("togglePassword").addEventListener("click", function() {
@@ -35,25 +36,40 @@
                 this.classList.add("bx-hide");
             }
         });
+        document.getElementById("togglePassword2").addEventListener("click", function() {
+            const password = document.getElementById("ccontra");
+            if (password.type === "password") {
+                password.type = "text";
+                this.classList.remove("bx-hide");
+                this.classList.add("bx-show");
+            } else {
+                password.type = "password";
+                this.classList.remove("bx-show");
+                this.classList.add("bx-hide");
+            }
+        });
     });
     document.addEventListener("DOMContentLoaded", function () {
-        var params = new URLSearchParams(window.location.search);
-        if (params.has("registroExitoso")) {
-            alert("Usuario registrado. Ahora puede ingresar");
-        }
-    });
+            var params = new URLSearchParams(window.location.search);
+            if (params.has("noExiste")) {
+                alert("No existe la persona, por favor registrese");
+            }
+            if (params.has("registroFallido")) {
+                alert("Error registrando usuario. Intenta de nuevo.");
+            }
+        });
   </script>
 </head>
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
-      <h1 class="logo me-auto me-lg-0"><a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
+      <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="index.html#about">Acerca de</a></li>
-          <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="index.html#team">Equipo</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#about">Acerca de</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#services">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#team">Equipo</a></li>
           <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
@@ -71,33 +87,36 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li> DROPDOWN  -->
-          <li><a class="nav-link scrollto" href="index.html#contact">Contáctanos</a></li>
+          <li><a class="nav-link scrollto" href="index.jsp#contact">Contáctanos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="register.html" class="get-started-btn scrollto">Crear cuenta</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Iniciar sesión</a>
     </div>
-  </header><!-- End Header -->
-        <!-- Pills navs -->
-        <section class="vh-100" style="background-color: #eee;">
+  </header>
+  <!-- End Header -->
+  <section class="vh-100" style="background-color: #eee; min-height: 1300px;">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
           <div class="card text-black" style="border-radius: 25px;">
             <div class="card-body p-md-5">
               <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-1">
-                  <img src="assets/img/login.png"
-                    class="img-fluid" alt="Sample image">
-                </div>
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-2">
-                  <p class="text-center text-warning h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Iniciar Sesión</p>
-                  <form class="mx-1 mx-md-4" action="assets/jsp/login.jsp">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                  <p class="text-center text-warning h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crear cuenta</p>
+                  <form class="mx-1 mx-md-4" action="assets/jsp/register2.jsp">
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
                         <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Ingresa tu usuario"/>
-                        <label class="form-label" for="usuario">Usuario</label>
+                        <label class="form-label" for="form3Example1c">Usuario</label>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre completo"/>
+                        <label class="form-label" for="form3Example3c">Nombre</label>
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
@@ -110,16 +129,22 @@
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                      <div class="form-outline flex-fill mb-0">
-                        <a href="#!" class="text-body">¿Olvidaste tu contraseña?</a>
+                      <div class="form-outline flex-fill mb-0 position-relative">
+                          <input type="password" id="ccontra" name="ccontra" class="form-control" placeholder="Ingresa tu contraseña"/>
+                          <label class="form-label" for="ccontra">Confirmar contraseña</label>
+                          <i class="bx bx-hide" id="togglePassword2" style="cursor: pointer; position: absolute; right: 10px; top: 10px;"></i>
                       </div>
                     </div>
                     <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                      <button type="submit" class="btn btn-warning btn-lg">Ingresar</button>
+                      <button type="submit" class="btn btn-warning btn-lg">Registrar</button>
                     </div>
-                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Todavía no tienes cuenta?<a href="register.html"
-                        class="link-warning"> Crea una</a></p>
+                    <p class="small fw-bold mt-2 pt-1 mb-0">¿Ya tienes una cuenta?<a href="login.jsp"
+                        class="link-warning"> Ingresa</a></p>
                   </form>
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                  <img src="assets/img/login.png"
+                    class="img-fluid" alt="Sample image">
                 </div>
               </div>
             </div>
@@ -128,7 +153,7 @@
       </div>
     </div>
   </section>
-<!-- ======= Footer ======= -->
+  <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="container">
     <div class="copyright">

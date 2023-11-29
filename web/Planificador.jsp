@@ -1,3 +1,4 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,20 +38,24 @@
       <h1 class="logo me-auto me-lg-0"><a href="index.jsp" class="logo me-auto me-lg-0"><img src="assets/img/Logo2.png" alt="" class="img-fluid"></a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <!-- <li><a class="nav-link scrollto" href="index.html#services">Servicios</a></li> --> 
-          <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+          <li><a class="nav-link scrollto" href="index.jsp#about">Acerca de</a></li>
+          <!-- <li><a class="nav-link scrollto" href="index.jsp#services">Servicios</a></li> --> 
+          <li><a class="nav-link scrollto" href="index.jsp#team">Equipo</a></li>
+          <li class="dropdown"><a href="index.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="Recetas.html">Generar recetas</a></li>
-              <li><a href="Sustitucion.html">Sustitución de ingredientes</a></li>
-              <li><a href="Informacion.html">Información nutrimental</a></li>
-              <li><a href="Planificador.html">Planificador de dietas</a></li>
-              <li><a href="Blog.html">Blog de cocina</a></li>
+              <li><a href="Recetas.jsp">Generar recetas</a></li>
+              <li><a href="Sustitucion.jsp">Sustitución de ingredientes</a></li>
+              <li><a href="Informacion.jsp">Información nutrimental</a></li>
+              <li><a href="#">Planificador de dietas</a></li>
+              <li><a href="Blog.jsp">Blog de cocina</a></li>
+              <li><a href="Premium.jsp">Premium</a></li>
             </ul>
           </li>
+          <li><a class="nav-link scrollto" href="index.jsp#contact">Contáctanos</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="login.html" class="get-started-btn scrollto">Comenzar</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Comenzar</a>
     </div>
   </header><!-- End Header -->
 
