@@ -69,7 +69,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="login.html" class="get-started-btn scrollto">Comenzar</a>
+      <a href="login.jsp" class="get-started-btn scrollto">Comenzar</a>
 
     </div>
   </header><!-- End Header -->
@@ -88,31 +88,31 @@
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="bi-journal-bookmark"></i>
-            <h3><a href="Recetas.html">Generar recetas</a></h3>
+            <h3><a href="Recetas.jsp">Generar recetas</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="bi-egg-fried"></i>
-            <h3><a href="Sustitucion.html">Sustitución de ingredientes</a></h3>
+            <h3><a href="Sustitucion.jsp">Sustitución de ingredientes</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
                 <i class="bi-list-columns"></i>
-                <h3><a href="Informacion.html">Información nutrimental</a></h3>
+                <h3><a href="Informacion.jsp">Información nutrimental</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="ri-calendar-todo-line"></i>
-            <h3><a href="Planificador.html">Planificador de dietas</a></h3>
+            <h3><a href="Planificador.jsp">Planificador de dietas</a></h3>
           </div>
         </div>
         <div class="col-xl-2 col-md-4">
           <div class="icon-box">
             <i class="bi-wechat"></i>
-            <h3><a href="Blog.html">Blog de Cocina</a></h3>
+            <h3><a href="Blog.jsp">Blog de Cocina</a></h3>
           </div>
         </div>
       </div>
@@ -201,7 +201,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box"> 
               <div class="icon"><i class='bx bx-food-menu' ></i></div>
-              <h4><a href="Recetas.html">Generar recetas</a></h4>
+              <h4><a href="Recetas.jsp">Generar recetas</a></h4>
               <p>Crea recetas mediante un software de deep learning en base a caracteristicas personales.</p>
             </div>
           </div>
@@ -209,7 +209,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-calendar"></i></div>
-              <h4><a href="Planificador.html">Planificador de dietas</a></h4>
+              <h4><a href="Planificador.jsp">Planificador de dietas</a></h4>
               <p>En este servicio podrás planificar una dieta básica en base a parametros y metas personales.</p>
             </div>
           </div>
@@ -217,7 +217,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-bar-chart-square"></i></div>
-              <h4><a href="Informacion.html">Información nutrimental</a></h4>
+              <h4><a href="Informacion.jsp">Información nutrimental</a></h4>
               <p>Esta página proporciona información de los ingredientes y las recetas para mayor apoyo.</p>
             </div>
           </div>
@@ -225,7 +225,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="Blog.html">Blog de cocina</a></h4>
+              <h4><a href="Blog.jsp">Blog de cocina</a></h4>
               <p>Un lugar para publicar, buscar y guardar recetas, hechas por ti o por otros usuarios.</p>
             </div>
           </div>
@@ -233,7 +233,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-cheese"></i></div>
-              <h4><a href="Sustitucion.html">Sustitución de ingredientes</a></h4>
+              <h4><a href="Sustitucion.jsp">Sustitución de ingredientes</a></h4>
               <p>Sustituye alimentos de la receta creada con otros similares ya sea por gusto, contenido nutricional u otra razón.</p>
             </div>
           </div>
@@ -241,7 +241,7 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-award"></i></div>
-              <h4><a href="Premium.html">Dishify Premium</a></h4>
+              <h4><a href="Premium.jsp">Dishify Premium</a></h4>
               <p>Servicios más personalizados que benefician al usuario que cuenta con la suscripción.</p>
             </div>
           </div>
@@ -444,7 +444,7 @@
             </div>
           </div>
           <div class="col-lg-8 mt-5 mt-lg-0">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Nombre:" required>
@@ -459,12 +459,7 @@
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Mensaje:" required></textarea>
               </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Enviar</button></div>
+              <div class="text-center"><a class="btn btn-secondary disabled" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">Enviar</a></div>
             </form>
           </div>
         </div>
