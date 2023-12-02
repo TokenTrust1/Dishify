@@ -36,7 +36,7 @@
                             <ul>
                             <li><a href="#">Generar recetas</a></li>
                             <li><a href="#">Sustitución de ingredientes</a></li>
-                            <li><a href="#">Información nutrimental</a></li>
+                            <li><a href="../generador_ingredientes.jsp">Información nutrimental</a></li>
                             <li><a href="../jsp/Planificador.jsp">Planificador de dietas</a></li>
                             <li><a href="#">Blog de cocina</a></li>
                             <li><a href="#">Premium</a></li>
