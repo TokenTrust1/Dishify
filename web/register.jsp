@@ -95,7 +95,7 @@
     </div>
   </header>
   <!-- End Header -->
-  <section class="vh-100" style="background-color: #eee; min-height: 1300px;">
+  <section class="vh-100">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -108,21 +108,21 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Ingresa tu usuario"/>
+                          <input type="text" id="usuario" name="usuario" class="form-control" placeholder="Ingresa tu usuario" pattern="[A-Za-z0-9]{4,14}" minlength="4" maxlength="14" title="El usuario no puede tener caracteres especiales." required/>
                         <label class="form-label" for="form3Example1c">Usuario</label>
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre completo"/>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Ingresa tu nombre completo" pattern="[A-Za-z\s]{4,29}" minlength="4" maxlength="29" title="El nombre debe contener solo letras." required/>
                         <label class="form-label" for="form3Example3c">Nombre</label>
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0 position-relative">
-                          <input type="password" id="contra" name="contra" class="form-control" placeholder="Ingresa tu contraseña"/>
+                          <input type="password" id="contra" name="contra" class="form-control" placeholder="Ingresa tu contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).[A-Za-z0-9]{6,10}" minlength="6" maxlength="10" title="La contraseña debe tener números, letras mayúsculas y minúsculas." required/>
                           <label class="form-label" for="contra">Contraseña</label>
                           <i class="bx bx-hide" id="togglePassword" style="cursor: pointer; position: absolute; right: 10px; top: 10px;"></i>
                       </div>
@@ -130,7 +130,7 @@
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0 position-relative">
-                          <input type="password" id="ccontra" name="ccontra" class="form-control" placeholder="Ingresa tu contraseña"/>
+                          <input type="password" id="ccontra" name="ccontra" class="form-control" placeholder="Ingresa tu contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).[A-Za-z0-9]{6,10}" minlength="6" maxlength="10" title="La contraseña debe tener números, letras mayúsculas y minúsculas." required/>
                           <label class="form-label" for="ccontra">Confirmar contraseña</label>
                           <i class="bx bx-hide" id="togglePassword2" style="cursor: pointer; position: absolute; right: 10px; top: 10px;"></i>
                       </div>
