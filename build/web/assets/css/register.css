@@ -12,7 +12,29 @@
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
+  }
+  .vh-100{
+    min-height: 900px;
     padding-top: 10px;
+    background-color: #eee;
+  }
+  @media (max-width: 992px) {
+    .vh-100{
+        min-height: 1300px;
+        padding-top: 50px;
+    }
+  }
+  @media (max-width: 560px) {
+    .vh-100{
+        min-height: 1250px;
+        padding-top: 40px;
+    }
+  }
+  @media (max-width: 420px) {
+    .vh-100{
+        min-height: 1100px;
+        padding-top: 30px;
+    }
   }
   h4{
     color: #ffc451;

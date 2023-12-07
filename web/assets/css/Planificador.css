@@ -25,25 +25,15 @@
     display: flex;
 }
 
-#part01 {
-    flex-basis: 45%;
-    background-image: linear-gradient(to bottom, var(--color01), var(--color02), var(--color03));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#logo {
-    width: 465px;
-}
-
 #part02 {
-    flex-basis: 55%;
+    flex-basis: 100%;
     background-color: var(--color04);
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 900px;
+    padding-top: 100px;
 }
 
 #calculator {

@@ -71,7 +71,7 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
-          <a href="../../register.html" class="get-started-btn scrollto">Crear cuenta</a>
+          <a href="../../register.jsp" class="get-started-btn scrollto">Crear cuenta</a>
         </div>
     </header>
 <%
@@ -107,7 +107,7 @@ try {
     if (con != null) try { con.close(); } catch (SQLException e) { e.printStackTrace(); }
 }
 %>
-<section class="vh-100" style="background-color: #eee; min-height: 1200px;">
+<section class="vh-100">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -156,7 +156,6 @@ try {
       </div>
     </div>
   </section>
-    <p><%= mensaje %></p>
 <footer id="footer">
     <div class="container">
       <div class="copyright">

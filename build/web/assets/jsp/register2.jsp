@@ -81,7 +81,7 @@
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
-          <a href="../../register.html" class="get-started-btn scrollto">Crear cuenta</a>
+          <a href="../../login.jsp" class="get-started-btn scrollto">Entrar</a>
         </div>
     </header>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -131,7 +131,7 @@
         }
     }
 %>
-    <section class="vh-100" style="background-color: #eee; min-height: 1300px;">
+    <section class="vh-100">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
@@ -189,7 +189,6 @@
       </div>
     </div>
   </section>
-    <p><%= mensaje %></p>
 <footer id="footer">
     <div class="container">
       <div class="copyright">

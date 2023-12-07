@@ -29,31 +29,30 @@
 </head>
 <body>
     <header id="header" class="fixed-top ">
-        <div class="container d-flex align-items-center justify-content-lg-between">
-            <h1 class="logo me-auto me-lg-0"><a href="home.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a class="nav-link scrollto" href="home.jsp#services">Servicios</a></li>
-                    <li><a class="nav-link scrollto" href="../../index.html#about">Acerca de</a></li>
-                    <li class="dropdown"><a href="index.html#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
-                                <ul>
-                                <li><a href="#">Generar recetas</a></li>
-                                <li><a href="#">Sustitución de ingredientes</a></li>
-                                <li><a href="#">Información nutrimental</a></li>
-                                <li><a href="#">Planificador de dietas</a></li>
-                                <li><a href="#">Blog de cocina</a></li>
-                                <li><a href="#">Premium</a></li>
-                                </ul>
-                            </li>
-                        <li><a class="nav-link scrollto" href="../../index.html#contact">Contáctanos</a></li>
-                        <li><a class="nav-link scrollto" href="#">Configuración</a></li>
-                        <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav><!-- .navbar -->
-            <a href="#" class="get-started-btn scrollto">Premium</a>
-        </div>
-    </header>
+    <div class="container d-flex align-items-center justify-content-lg-between">
+        <h1 class="logo me-auto me-lg-0"><a href="home.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
+        <nav id="navbar" class="navbar order-last order-lg-0">
+            <ul>
+                <li><a class="nav-link scrollto" href="home.jsp#about">Acerca de</a></li>
+                <li class="dropdown"><a href="home.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul>
+                            <li><a href="#">Generar recetas</a></li>
+                            <li><a href="#">Sustitución de ingredientes</a></li>
+                            <li><a href="info.jsp">Información nutrimental</a></li>
+                            <li><a href="#">Planificador de dietas</a></li>
+                            <li><a href="#">Blog de cocina</a></li>
+                            <li><a href="#">Premium</a></li>
+                            </ul>
+                        </li>
+                    <li><a class="nav-link scrollto" href="home.jsp#contact">Contáctanos</a></li>
+                    <li><a class="nav-link scrollto" href="#">Configuración</a></li>
+                    <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav><!-- .navbar -->
+        <a href="#" class="get-started-btn scrollto">Premium</a>
+    </div>
+</header>
     <%
         // Obtener datos de la sesión
         String user = (String) session.getAttribute("user");
@@ -103,9 +102,6 @@
 
     <!-- Contenido principal -->
     <div class="col-md-11" id="main-content">
-            <section id="part01">
-                <img src="images/metamorfose-465.png" alt="Logo da Metamorfose Fitness" id="logo">
-            </section>
             <section id="part02">
                 <div id="calculator">
                     <h1>Calculadora Fitness</h1>

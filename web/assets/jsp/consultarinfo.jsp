@@ -43,7 +43,7 @@ String fat = "";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información</title>
-    <link rel="stylesheet" href="assets/css/PDFUNC.css">
+    <link rel="stylesheet" href="../css/PDFUNC.css">
     <link href="../css/login.css" rel="stylesheet">
     <meta content="" name="description">
   <meta content="" name="keywords">
@@ -99,7 +99,7 @@ String fat = "";
         <div class="content-wrapper">
             <div class="left-column">
                 <div class="plate-circle">
-                    <img src="assets/img/platillo1.png" alt="Grilled Fish Salad" class="plate-image">
+                    <img src="../img/platillo1.png" alt="Grilled Fish Salad" class="plate-image">
                 </div>
             </div>
             <div class="right-column">
