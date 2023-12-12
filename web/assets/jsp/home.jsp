@@ -32,6 +32,7 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li><a class="nav-link scrollto" href="home.jsp#about">Acerca de</a></li>
+                <li><a class="nav-link scrollto" href="at.jsp">Atencion al cliente</a></li>
                 <li class="dropdown"><a href="home.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                             <li><a href="#">Generar recetas</a></li>
