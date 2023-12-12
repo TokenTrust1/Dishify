@@ -1,5 +1,5 @@
-var serverIP = "192.168.100.10"; // Asegúrate de que no hay espacios al inicio
-var wsURI = "ws://" + serverIP + ":8080/DishifyMx/chat";
+var serverIP = "tokentrust.gerdoc.com"; // Asegúrate de que no hay espacios al inicio
+var wsURI = "https://" + serverIP + ":8080/DishifyMx/chat";
 
 
 var websocket = new WebSocket(wsURI);
