@@ -32,6 +32,7 @@
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
                 <li><a class="nav-link scrollto" href="home.jsp#about">Acerca de</a></li>
+                <li><a class="nav-link scrollto" href="at.jsp">Atencion al cliente</a></li>
                 <li class="dropdown"><a href="home.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                             <li><a href="#">Generar recetas</a></li>
@@ -42,7 +43,6 @@
                             <li><a href="#">Premium</a></li>
                             </ul>
                         </li>
-                    <li><a class="nav-link scrollto" href="home.jsp#contact">Contáctanos</a></li>
                     <li><a class="nav-link scrollto" href="#">Configuración</a></li>
                     <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
             </ul>
@@ -132,7 +132,8 @@
                 <div class="col-xl-2 col-md-4">
                   <div class="icon-box">
                     <i class="ri-calendar-todo-line"></i>
-                    <h3><a href="Planificador_Validar.jsp">Planificador de dietas</a></h3>
+                    <h3><a href="Planificador_Crear.jsp">Planificador de dietas</a></h3>
+                    <h3><a href="Planificador_Inicio.jsp">.</a></h3>
                   </div>
                 </div>
                 <div class="col-xl-2 col-md-4">
