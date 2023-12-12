@@ -152,97 +152,6 @@
                     </form>
                 </div>
             </section>
-        </section>
-        <aside id="second">
-            <h1>Fórmulas Utilizadas:</h1>
-            <h2>Calcular Macronutrientes:</h2>
-            <div>
-                <h3>1° Calcular tasa de metabolismo basal (TMB)</h3>
-                <p><strong>P:</strong> Peso.</p>
-                <p><strong>A:</strong> Altura.</p>
-                <p><strong>I:</strong> Edad.</p>
-                <table>
-                    <tr>
-                        <th>Sexo</th>
-                        <th>Fórmula de Harris-Benedict</th>
-                    </tr>
-                    <tr>
-                        <td>Femenino</td>
-                        <td>655 + (9,6 x P) + (1,9 x A) – (4,7 x I)</td>
-                    </tr>
-                    <tr>
-                        <td>Masculino</td>
-                        <td>66 + (13,8 x P) + (5,0 x A) – (6,8 x I)</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>2° Calcular factor actividad física</h3>
-                <table>
-                    <tr>
-                        <th>Nivel de actividad física</th>
-                        <th>Valores</th>
-                    </tr>
-                    <tr>
-                        <td>Ligera</td>
-                        <td>Factor medio de 1.375</td>
-                    </tr>
-                    <tr>
-                        <td>Moderada</td>
-                        <td>Factor medio de 1.55</td>
-                    </tr>
-                    <tr>
-                        <td>Intensa</td>
-                        <td>Factor medio de 1.725</td>
-                    </tr>
-                </table>
-            </div>
-            <div>
-                <h3>3° Calcular gasto calórico total</h3>
-                <p><strong>Gasto calórico total:</strong> Tasa de metabolismo basal x Factor actividad física.</p>
-            </div>
-            <div>
-                <h3>4° Calcular el consumo de calorías</h3>
-                <p><strong>Mantener peso:</strong> consumir el gasto calórico total.</p>
-                <p><strong>Ganar peso:</strong> gasto calórico total + 500 calorías.</p>
-                <p><strong>Perder peso:</strong> gasto calórico total - 500 calorías.</p>
-            </div>
-            <div>
-                <h3>5° Dividir los macros</h3>
-                <p><strong>Proteínas:</strong> 14,29% de las calorías totales.</p>
-                <p><strong>Carbohidratos:</strong> 57,14% de las calorías totales.</p>
-                <p><strong>Grasas:</strong> 28,57% de las calorías totales.</p>
-            </div>
-            <div>
-                <h2>Cálculo de Creatina:</h2>
-                <p><strong>Creatina:</strong> 0,07g X kg.</p>
-            </div>
-            <div>
-                <h2>Cálculo cantidad de agua:</h2>
-                <table>
-                    <tr>
-                        <th>Rango de Edad</th>
-                        <th>Cantidad de agua por kg</th>
-                    </tr>
-                    <tr>
-                        <td>Hasta los 17 años</td>
-                        <td>40 ml por cada kg</td>
-                    </tr>
-                    <tr>
-                        <td>18 a 55 años</td>
-                        <td>35 ml por cada kg</td>
-                    </tr>
-                    <tr>
-                        <td>55 a 65 años</td>
-                        <td>30 ml por cada kg</td>
-                    </tr>
-                    <tr>
-                        <td>Más de 66 años</td>
-                        <td>25 ml por cada kg</td>
-                    </tr>
-                </table>
-            </div>
-        </aside>    
     </div>  
   </div>
 </div>
@@ -272,6 +181,31 @@
     <script src="../js/Planificador.js"></script>
     <script type="text/javascript">
     </script>
+    <%
+        Connection con = null;
+        String mensaje = "";
+        try {
+            con = ConexionBD.obtenerConexion();
+            String sql = "SELECT * FROM plan WHERE usuario = ?";
+            PreparedStatement stmt = con.prepareStatement(sql);
+            stmt.setString(1, user);
+            ResultSet rs = stmt.executeQuery();
+            if (rs.next()) {
+                session.setAttribute("user", user);
+                session.setAttribute("name", name);
+                response.sendRedirect("Planificador_Inicio.jsp");
+
+            } else {
+                session.setAttribute("user", user);
+                session.setAttribute("name", name);
+                response.sendRedirect("Planificador_Crear.jsp");
+            }
+        } catch (Exception e) {
+            mensaje = "Error al conectar con la base de datos: " + e.getMessage();
+        } finally {
+            if (con != null) try { con.close(); } catch (SQLException e) { e.printStackTrace(); }
+        }
+    %>
     </body>
 </html>
   

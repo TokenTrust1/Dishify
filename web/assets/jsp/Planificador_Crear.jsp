@@ -33,7 +33,6 @@
         <h1 class="logo me-auto me-lg-0"><a href="home.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
         <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-                <li><a class="nav-link scrollto" href="home.jsp#about">Acerca de</a></li>
                 <li class="dropdown"><a href="home.jsp#services"><span>Servicios</span> <i class="bi bi-chevron-down"></i></a>
                             <ul>
                             <li><a href="#">Generar recetas</a></li>
@@ -44,7 +43,6 @@
                             <li><a href="#">Premium</a></li>
                             </ul>
                         </li>
-                    <li><a class="nav-link scrollto" href="home.jsp#contact">Contáctanos</a></li>
                     <li><a class="nav-link scrollto" href="#">Configuración</a></li>
                     <li><a class="nav-link scrollto" href="logout.jsp">Salir</a></li>
             </ul>
@@ -152,7 +150,6 @@
                     </form>
                 </div>
             </section>
-        </section>
         <aside id="second">
             <h1>Fórmulas Utilizadas:</h1>
             <h2>Calcular Macronutrientes:</h2>

@@ -44,12 +44,12 @@
 <body>
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
-          <h1 class="logo me-auto me-lg-0"><a href="../../index.html" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
+          <h1 class="logo me-auto me-lg-0"><a href="../../index.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-              <li><a class="nav-link scrollto" href="../../index.html#about">Acerca de</a></li>
-              <li><a class="nav-link scrollto" href="../../index.html#services">Servicios</a></li>
-              <li><a class="nav-link scrollto" href="../../index.html#team">Equipo</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#about">Acerca de</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#services">Servicios</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#team">Equipo</a></li>
               <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">Drop Down 1</a></li>
@@ -67,7 +67,7 @@
                   <li><a href="#">Drop Down 4</a></li>
                 </ul>
               </li> DROPDOWN  -->
-              <li><a class="nav-link scrollto" href="../../index.html#contact">Contáctanos</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#contact">Contáctanos</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
@@ -124,14 +124,14 @@ try {
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0">
-                        <input type="text" id="usuario" name="usuario" class="form-control" value="<%= usuario %>"/>
+                        <input type="text" id="usuario" name="usuario" class="form-control" value="<%= usuario %>" pattern="[A-Za-z0-9]{4,14}" minlength="4" maxlength="14" title="El usuario no puede tener caracteres especiales." required/>
                         <label class="form-label" for="form3Example1c">Usuario</label>
                       </div>
                     </div>
                     <div class="d-flex flex-row align-items-center mb-4">
                       <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                       <div class="form-outline flex-fill mb-0 position-relative">
-                          <input type="password" id="contra" name="contra" class="form-control" value="<%= contraa %>"/>
+                          <input type="password" id="contra" name="contra" class="form-control" value="<%= contraa %>" pattern="[A-Za-z0-9]{6,10}" minlength="6" maxlength="10" title="La contraseña debe tener mínimo 6 digitos." required/>
                           <label class="form-label" for="contraseña">Contraseña</label>
                           <i class="bx bx-hide" id="togglePassword" style="cursor: pointer; position: absolute; right: 10px; top: 10px;"></i>
                       </div>

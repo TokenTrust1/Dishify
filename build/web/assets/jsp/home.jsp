@@ -37,7 +37,7 @@
                             <li><a href="#">Generar recetas</a></li>
                             <li><a href="#">Sustitución de ingredientes</a></li>
                             <li><a href="info.jsp">Información nutrimental</a></li>
-                            <li><a href="Planificador.jsp">Planificador de dietas</a></li>
+                            <li><a href="Planificador_Validar.jsp">Planificador de dietas</a></li>
                             <li><a href="#">Blog de cocina</a></li>
                             <li><a href="#">Premium</a></li>
                             </ul>
@@ -132,7 +132,7 @@
                 <div class="col-xl-2 col-md-4">
                   <div class="icon-box">
                     <i class="ri-calendar-todo-line"></i>
-                    <h3><a href="Planificador.jsp">Planificador de dietas</a></h3>
+                    <h3><a href="Planificador_Validar.jsp">Planificador de dietas</a></h3>
                   </div>
                 </div>
                 <div class="col-xl-2 col-md-4">
@@ -165,7 +165,7 @@
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><i class="bx bx-calendar"></i></div>
-                <h4><a href="Planificador.jsp">Planificador de dietas</a></h4>
+                <h4><a href="Planificador_Validar.jsp">Planificador de dietas</a></h4>
                 <p>En este servicio podrás planificar una dieta básica en base a parametros y metas personales.</p>
               </div>
             </div>
