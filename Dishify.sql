@@ -69,7 +69,7 @@ INSERT INTO ingredientes(nombre, calorias, carbos, proteina, fat) VALUES
 ('Mole en polvo', 375, 50, 12, 10);
 select * from ingredientes;
 INSERT INTO users (usuario, contra, nombre) VALUES
-('Cham', '1234', 'Samuel Gutierrez'),
+('Cham123', 'Cham061205', 'Samuel Gutierrez'),
 ('Cesarin', 'cesar1', 'Cesar Gonzalez');
 select * from users;
 CREATE TABLE recetas (
@@ -89,7 +89,14 @@ INSERT INTO recetas (nombre, calorias, grasas, carbohidratos, proteinas, porcion
 	('Tacos de Pescado', 380, 12.4, 44.8, 26.1, '2 tacos', 'Ingredientes para Tacos de Pescado...', 'Instrucciones para Tacos de Pescado...'),
 	('Smoothie de Plátano y Fresa', 210, 1.5, 46.2, 4.8, '1 vaso (300 ml)', 'Ingredientes para Smoothie de Plátano y Fresa...', 'Instrucciones para Smoothie de Plátano y Fresa...'),
 	('Pasta al Pesto', 610, 22.4, 82.3, 20.1, '1 plato (350 g)', 'Ingredientes para Pasta al Pesto...', 'Instrucciones para Pasta al Pesto...'),
-	('Curry de Garbanzos', 435, 14.8, 65.4, 18.2, '1 plato (400 g)', 'Ingredientes para Curry de Garbanzos...', 'Instrucciones para Curry de Garbanzos...');
+	('Curry de Garbanzos', 435, 14.8, 65.4, 18.2, '1 plato (400 g)', 'Ingredientes para Curry de Garbanzos...', 'Instrucciones para Curry de Garbanzos...'),
+    ('Ensalada Griega con Pollo',310 , 18 ,12 ,28 ,'1 plato (250 g)','Pechuga de pollo 150 g, Tomate 1 unidad (100 g), Pepino 1/2 unidad (50 g), Queso feta 50 g, Aceitunas negras 10 unidades (30 g), Aceite de oliva 1 cucharada (15 g)','1.Cocinar la pechuga de pollo a la plancha y cortar en tiras.2.Cortar el tomate y el pepino en cubos.3.Mezclar todos los ingredientes en un bol y agregar el queso feta y las aceitunas.4.Aliñar con aceite de oliva y servir.'),
+	('Tacos de Pescado',380 , 18 ,12 ,28 ,'1 plato (250 g)','Pechuga de pollo 150 g, Tomate 1 unidad (100 g), Pepino 1/2 unidad (50 g), Queso feta 50 g, Aceitunas negras 10 unidades (30 g), Aceite de oliva 1 cucharada (15 g)','1.Cocinar la pechuga de pollo a la plancha y cortar en tiras.2.Cortar el tomate y el pepino en cubos.3.Mezclar todos los ingredientes en un bol y agregar el queso feta y las aceitunas.4.Aliñar con aceite de oliva y servir.'),
+	('Ensalada Griega con Pollo', 310, 18, 12, 28, '1 plato (250 g)', 'Pechuga de pollo 150 g, Tomate 1 unidad (100 g), Pepino 1/2 unidad (50 g), Queso feta 50 g, Aceitunas negras 10 unidades (30 g), Aceite de oliva 1 cucharada (15 g)', '1. Cocinar la pechuga de pollo a la plancha y cortar en tiras. 2. Cortar el tomate y el pepino en cubos. 3. Mezclar todos los ingredientes en un bol y agregar el queso feta y las aceitunas. 4. Aliñar con aceite de oliva y servir.'),
+	('Tacos de Pescado', 380, 15, 35, 25, '2 tacos (200 g)', 'Filete de pescado blanco 120 g, Tortillas de maíz 2 unidades (60 g), Repollo 1/4 taza (30 g), Yogur natural 2 cucharadas (30 g), Limón 1/2 unidad (20 g), Aceite de oliva 1 cucharadita (5 g)', '1. Condimentar y cocinar el pescado en una sartén con un poco de aceite de oliva. 2. Calentar las tortillas de maíz. 3. Rellenar las tortillas con el pescado, repollo rallado y un toque de yogur mezclado con jugo de limón.'),
+	('Sopa de Lentejas', 320, 8, 40, 18, '1 tazón (300 g)', 'Lentejas 1/2 taza (100 g), Zanahoria 1 unidad (60 g), Cebolla 1/4 unidad (40 g), Ajo 1 diente (5 g), Caldo de verduras 2 tazas (500 ml), Aceite de oliva 1 cucharadita (5 g)', '1. Sofreír en una olla la cebolla y el ajo picados. 2. Agregar las lentejas, la zanahoria cortada y el caldo. 3. Cocinar a fuego lento hasta que las lentejas estén tiernas.'),
+	('Stir Fry de Tofu y Vegetales', 260, 16, 20, 12, '1 plato (250 g)', 'Tofu 100 g, Brócoli 1/2 taza (50 g), Zanahoria 1/2 unidad (30 g), Pimiento rojo 1/4 unidad (30 g), Salsa de soja 2 cucharadas (30 ml), Aceite de sésamo 1 cucharadita (5 g)', '1. Cortar el tofu en cubos y dorar en una sartén con aceite de sésamo. 2. Añadir los vegetales troceados y saltear. 3. Agregar la salsa de soja y cocinar por unos minutos más.'),
+	('Ensalada de Quinoa con Espinacas', 340, 12, 45, 14, '1 plato (250 g)', 'Quinoa 1/2 taza (90 g), Espinacas frescas 1 taza (30 g), Tomates cherry 1/2 taza (100 g), Almendras tostadas 1/4 taza (30 g), Queso feta 30 g, Vinagreta balsámica 2 cucharadas (30 ml)', '1. Cocinar la quinoa según las instrucciones del paquete. 2. Mezclar la quinoa cocida con espinacas, tomates cherry y almendras. 3. Agregar queso feta y aderezar con vinagreta balsámica.');
 select * from recetas;
 CREATE TABLE plan (
     idPlan int auto_increment primary key,
@@ -107,6 +114,6 @@ CREATE TABLE plan (
 );	
 INSERT INTO plan (tmetb, gent, caldiarias, proteinas, carbohidratos, grasas, imc, creatina, agua, usuario)
 VALUES
-(1800, 150, 2000, 100, 300, 50, 25.5, 5.5, 2.5, 'Cham');
+(1800, 150, 2000, 100, 300, 50, 25.5, 5.5, 2.5, 'Cham123');
 select * from plan;
 

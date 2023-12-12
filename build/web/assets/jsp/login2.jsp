@@ -44,12 +44,12 @@
 <body>
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
-          <h1 class="logo me-auto me-lg-0"><a href="../../index.html" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
+          <h1 class="logo me-auto me-lg-0"><a href="../../index.jsp" class="logo me-auto me-lg-0"><img src="../img/Logo2.png" alt="" class="img-fluid"></a></h1>
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul>
-              <li><a class="nav-link scrollto" href="../../index.html#about">Acerca de</a></li>
-              <li><a class="nav-link scrollto" href="../../index.html#services">Servicios</a></li>
-              <li><a class="nav-link scrollto" href="../../index.html#team">Equipo</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#about">Acerca de</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#services">Servicios</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#team">Equipo</a></li>
               <!--<li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="#">Drop Down 1</a></li>
@@ -67,7 +67,7 @@
                   <li><a href="#">Drop Down 4</a></li>
                 </ul>
               </li> DROPDOWN  -->
-              <li><a class="nav-link scrollto" href="../../index.html#contact">Contáctanos</a></li>
+              <li><a class="nav-link scrollto" href="../../index.jsp#contact">Contáctanos</a></li>
             </ul>
             <i class="bi bi-list mobile-nav-toggle"></i>
           </nav><!-- .navbar -->
